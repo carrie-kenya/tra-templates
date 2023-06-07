@@ -1,0 +1,153 @@
+* {
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: whitesmoke;
+  position: relative;
+}
+
+.mainheader {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainheader .logo {
+  width: 80px;
+  height: 50px;
+  font-size: 1.2rem;
+  margin-left: 0.6rem;
+  background: white;
+  display: grid;
+  place-items: center;
+}
+.mainheader .navigation {
+  display: none;
+}
+.mainheader .account {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  justify-content: space-between;
+  width: 180px;
+}
+.mainheader .account .tag {
+  text-decoration: none;
+  padding: 1rem;
+  background: blue;
+  border-radius: 3px;
+  color: white;
+}
+.mainheader .account .toggle {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 3px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bodycontent .tablecontent {
+  width: 100%;
+  margin: 1rem auto;
+  background: whitesmoke;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem;
+  position: relative;
+  background: rgba(255, 255, 255, 0.8);
+  overflow-y: scroll;
+}
+.bodycontent .tablecontent::-webkit-scrollbar {
+  display: none;
+}
+@media only screen and (min-width: 426px) {
+  .bodycontent .tablecontent {
+    width: 90%;
+    height: 60h;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .bodycontent .tablecontent {
+    width: 80%;
+    height: 70vh;
+  }
+}
+.bodycontent .tablecontent .tables {
+  width: 94%;
+  height: 100%;
+  margin: 1rem auto;
+}
+.bodycontent .tablecontent .tables table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+.bodycontent .tablecontent .tables table tr {
+  border-bottom: 1px solid black;
+}
+.bodycontent .tablecontent .tables table tr:nth-child(even) {
+  background: rgb(236, 236, 236);
+}
+.bodycontent .tablecontent .tables table tr th {
+  border: 1px solid black;
+  padding: 1rem 0.2rem;
+  font-size: 1.2rem;
+  color: grey;
+  background: skyblue;
+}
+.bodycontent .tablecontent .tables table tr td {
+  border: 1px solid black;
+  padding: 1rem 0.2rem;
+  font-size: 1.2rem;
+  color: grey;
+  padding-left: 1rem;
+}
+.bodycontent .watermark-content {
+  width: 94%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 1rem;
+  z-index: -1;
+}
+.bodycontent .watermark-content .watermark {
+  width: 140px;
+  height: 100px;
+  margin-left: 1rem;
+  overflow: hidden;
+  transform: rotate(-45deg);
+  margin-top: 3rem;
+}
+.bodycontent .watermark-content .watermark img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: gray;
+  display: grid;
+  place-items: center;
+}
+.footer p {
+  color: white;
+  text-align: center;
+}/*# sourceMappingURL=index.css.map */
